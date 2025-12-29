@@ -1,26 +1,53 @@
 # 🏥 Patient Management System
 
-A **Python-based Patient Management System** designed to efficiently manage patient records using a simple and structured approach. This project demonstrates core programming concepts such as data persistence, modular code design, and basic CRUD operations, making it ideal for learning and small-scale healthcare management use cases.
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-success)
+![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-red)
+![SQLite](https://img.shields.io/badge/Database-SQLite-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+A **full-stack Patient Management System** built using **FastAPI** for the backend and **Streamlit** for the frontend.
+This project demonstrates clean API design, CRUD operations, and real-world backend–frontend integration.
 
 ---
 
-## 🚀 Features
+## 🚀 Project Overview
 
-* ✅ Add new patient records
-* 🔍 View and search existing patient information
-* ✏️ Update patient details
-* ❌ Delete patient records
-* 💾 Persistent storage using SQLite database
-* 🧩 Clean and modular project structure
+The Patient Management System allows users to manage patient records efficiently through a web interface.
+It supports full **CRUD operations**, persistent database storage, and a scalable backend architecture.
+
+This project is ideal for:
+
+* Learning FastAPI and REST APIs
+* Practicing backend–frontend integration
+* Understanding database-driven applications
+* Showcasing real-world development skills
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Key Features
 
-* **Programming Language:** Python
-* **Database:** SQLite
-* **Architecture:** Modular & file-based
-* **Environment:** Local / CLI-based
+✅ Add new patient records
+✅ Fetch all patients
+✅ Retrieve a single patient by ID
+✅ Update patient details
+✅ Delete patient records
+✅ Interactive UI using Streamlit
+✅ RESTful API with FastAPI
+✅ SQLite-based persistent storage
+
+---
+
+## 🧱 Tech Stack
+
+| Layer    | Technology |
+| -------- | ---------- |
+| Backend  | FastAPI    |
+| Frontend | Streamlit  |
+| Database | SQLite     |
+| API Docs | Swagger UI |
+| Language | Python     |
 
 ---
 
@@ -29,12 +56,19 @@ A **Python-based Patient Management System** designed to efficiently manage pati
 ```
 Patient-Management-System/
 │
-├── app.py               # Main application logic
-├── database.py          # Database connection & operations
-├── models.py            # Data models and schemas
-├── main.py              # Entry point of the application
-├── patients.db          # SQLite database file
-└── README.md            # Project documentation
+├── backend/
+│   ├── main.py              # FastAPI application entry point
+│   ├── models.py            # Database models
+│   ├── database.py          # Database configuration
+│   ├── schemas.py           # Pydantic schemas
+│   └── crud.py              # CRUD logic
+│
+├── frontend/
+│   └── app.py               # Streamlit UI
+│
+├── patients.db              # SQLite database
+├── requirements.txt
+└── README.md
 ```
 
 ---
@@ -54,63 +88,68 @@ cd Patient-Management-System
 pip install -r requirements.txt
 ```
 
-*(If `requirements.txt` is not present, the project runs using standard Python libraries.)*
-
-### 3️⃣ Run the Application
+### 3️⃣ Run the Backend (FastAPI)
 
 ```bash
-python main.py
+uvicorn backend.main:app --reload
+```
+
+Access API documentation at:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+### 4️⃣ Run the Frontend (Streamlit)
+
+```bash
+streamlit run frontend/app.py
 ```
 
 ---
 
-## 🧠 How It Works
+## 🔄 CRUD Operations Implemented
 
-1. The application initializes a local SQLite database.
-2. Users can add, view, update, or delete patient records.
-3. All data is stored persistently in the database.
-4. The system follows a modular design for easy maintenance and scalability.
+| Operation  | Description                |
+| ---------- | -------------------------- |
+| Create     | Add a new patient          |
+| Read (All) | Retrieve all patients      |
+| Read (One) | Get patient by ID          |
+| Update     | Modify patient details     |
+| Delete     | Remove patient from system |
 
 ---
 
 ## 📌 Use Cases
 
-* Learning Python database integration
-* Academic or semester projects
-* Small clinic or hospital data management simulation
-* Foundation for building full-stack healthcare systems
+* Clinic or hospital record management (prototype)
+* Backend API learning project
+* FastAPI + Streamlit integration demo
+* Portfolio project for software / AI roles
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Web interface using **Flask / FastAPI**
-* Authentication and role-based access
-* Appointment scheduling module
-* Export data to CSV / Excel
-* REST API integration
+* Authentication & authorization (JWT)
+* Pagination and filtering
+* Search functionality
+* Dockerization
+* Cloud database integration (PostgreSQL)
+* Role-based access control (Admin / Staff)
 
 ---
 
 ## 👨‍💻 Author
 
 **Jahanzeb Riaz**
-Aspiring AI & Machine Learning Engineer
+Aspiring AI & Software Engineer
 GitHub: [@jahanzeb17](https://github.com/jahanzeb17)
 
 ---
 
-## 📜 License
+## 📄 License
 
-This project is open-source and available under the **MIT License**.
+This project is licensed under the **MIT License** — feel free to use, modify, and distribute.
 
 ---
-
-If you want, I can also:
-
-* Add **screenshots section**
-* Rewrite it for **resume / portfolio use**
-* Convert this into a **professional project description for LinkedIn**
-* Add **badges (Python, SQLite, Open Source, etc.)**
-
-Just tell me what you want next.
