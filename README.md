@@ -4,7 +4,6 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-success)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-red)
 ![SQLite](https://img.shields.io/badge/Database-SQLite-lightgrey)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 A **full-stack Patient Management System** built using **FastAPI** for the backend and **Streamlit** for the frontend.
