@@ -1,6 +1,6 @@
 # 🏥 Patient Management System
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-success)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-red)
 ![SQLite](https://img.shields.io/badge/Database-SQLite-lightgrey)
@@ -145,11 +145,5 @@ streamlit run frontend/app.py
 **Jahanzeb Riaz**
 Aspiring AI & Software Engineer
 GitHub: [@jahanzeb17](https://github.com/jahanzeb17)
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — feel free to use, modify, and distribute.
 
 ---
