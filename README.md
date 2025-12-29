@@ -28,8 +28,8 @@ This project is ideal for:
 
 ## ✨ Key Features
 
-✅ Add new patient records
-✅ Fetch all patients
+✅ Add new patient records \n
+✅ Fetch all patients \n
 ✅ Retrieve a single patient by ID
 ✅ Update patient details
 ✅ Delete patient records
