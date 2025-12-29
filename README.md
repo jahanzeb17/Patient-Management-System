@@ -1,4 +1,4 @@
-# 🏥 Patient Management System
+# Patient Management System
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-success)
@@ -28,8 +28,8 @@ This project is ideal for:
 
 ## ✨ Key Features
 
-✅ Add new patient records \n
-✅ Fetch all patients \n
+✅ Add new patient records
+✅ Fetch all patients
 ✅ Retrieve a single patient by ID
 ✅ Update patient details
 ✅ Delete patient records
